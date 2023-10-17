@@ -1,7 +1,7 @@
 """
 The entry point of the Python Wheel
 """
-
+import os
 import sys
 import argparse
 import SparkTest
@@ -15,6 +15,7 @@ parser.add_argument("-s", "--script", help="Python file to run")
 def main(argv=sys.argv[1:]):
     print('Entrypoint arguments:')
     print(sys.argv)
+    print('CWD: ', os.getcwd())
 
     args = parser.parse_args(argv)
     if args.script:
