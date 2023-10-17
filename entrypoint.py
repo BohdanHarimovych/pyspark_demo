@@ -4,7 +4,7 @@ The entry point of the Python Wheel
 import os
 import sys
 import argparse
-import SparkTest
+from app import SparkTest
 from behave import __main__
 
 parser = argparse.ArgumentParser()
